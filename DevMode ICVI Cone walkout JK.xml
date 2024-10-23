@@ -1,0 +1,317 @@
+<VarianResearchBeam SchemaVersion="1.0">
+	<!--*********************************-->
+	<!--Dev Mode uses Varian standard machine scale -->
+	<!--Must Park MLC and retract kV Arms -->
+	<!--*********************************-->
+	<SetBeam>
+		<Id>1234</Id>
+		<MLCModel>NDS120HD</MLCModel>
+		<Accs></Accs>
+		<ControlPoints>
+			<Cp>
+				<!--control point 0, Gantry head up.-->
+				<SubBeam>
+					<Seq>0</Seq>
+					<Name>MV Outside</Name>
+				</SubBeam>
+				<Energy>6xFFF</Energy>
+				<Mu>0</Mu>
+				<DRate>600</DRate>
+				<GantryRtn>180.00</GantryRtn>
+				<CollRtn>180.0</CollRtn>
+				<CouchRtn>180</CouchRtn>
+				<Y1>2.5</Y1>
+				<Y2>2.5</Y2>
+				<X1>2.5</X1>
+				<X2>2.5</X2>				
+			</Cp>
+			<Cp>
+				<!--control point 1.-->
+			</Cp>
+			<!-- Collimator Rotations-->
+			<Cp>
+				<!--control point 2.-->
+				<CollRtn>150</CollRtn>
+			</Cp>
+			<Cp>
+				<!--control point 3.-->
+				<CollRtn>120</CollRtn>
+			</Cp>
+			<Cp>
+				<!--control point 4.-->
+				<CollRtn>90</CollRtn>
+			</Cp>
+			<Cp>
+				<!--control point 5.-->
+				<CollRtn>60</CollRtn>
+			</Cp>
+			<Cp>
+				<!--control point 6.-->
+				<CollRtn>30</CollRtn>
+			</Cp>
+			<Cp>
+				<!--control point 7.-->
+				<CollRtn>210</CollRtn>
+			</Cp>
+			<Cp>
+				<!--control point 8.-->
+				<CollRtn>240</CollRtn>
+			</Cp>
+			<Cp>
+				<!--control point 9.-->
+				<CollRtn>270</CollRtn>
+			</Cp>
+			<Cp>
+				<!--control point 10.-->
+				<CollRtn>300</CollRtn>
+			</Cp>
+			<Cp>
+				<!--control point 11.-->
+				<CollRtn>330</CollRtn>
+			</Cp>
+			<Cp>
+				<!--control point 12. Return Coll to 0. no image-->
+				<CollRtn>180</CollRtn>
+			</Cp>
+		</ControlPoints>
+		<!--
+******************************************************************* 
+ Here is where we specify that outside treatment mode 
+ ********************************************************************-->
+		<ImagingParameters>
+			<OutsideTreatment>
+				<MaxMu>100</MaxMu>
+				<!-- This is just a limit of max 
+MU to be delivered. Actual MU delivered will be just what is enough to take the MV 
+image we are requesting.-->
+			</OutsideTreatment>
+			<!--
+******************************************************************* 
+ Here is where we specify the Imaging Points 
+ ********************************************************************-->
+			<ImagingPoints>				
+				<ImagingPoint>
+					<Cp>1</Cp>
+					<Acquisition>
+						<AcquisitionId>1</AcquisitionId>
+						<AcquisitionSpecs/>
+						<AcquisitionParameters>
+							<ImageMode id="Highres"/>
+							<CalibrationSet>DefaultCalibrationSetId</CalibrationSet>
+							<MV/>
+						</AcquisitionParameters>
+					</Acquisition>
+					<Mvd>
+						<Positions>
+							<Lat>0</Lat>
+							<Lng>0</Lng>
+							<Vrt>-80</Vrt>
+							<Pitch>0</Pitch>
+						</Positions>
+					</Mvd>
+				</ImagingPoint>
+				<ImagingPoint>
+					<Cp>2</Cp>
+					<Acquisition>
+						<AcquisitionId>2</AcquisitionId>
+						<AcquisitionSpecs/>
+						<AcquisitionParameters>
+							<ImageMode id="Highres"/>
+							<CalibrationSet>DefaultCalibrationSetId</CalibrationSet>
+							<MV/>
+						</AcquisitionParameters>
+					</Acquisition>
+					<Mvd>
+						<Positions>
+							<Lat>0</Lat>
+							<Lng>0</Lng>
+							<Vrt>-80</Vrt>
+							<Pitch>0</Pitch>
+						</Positions>
+					</Mvd>
+				</ImagingPoint>
+				<ImagingPoint>
+					<Cp>3</Cp>
+					<Acquisition>
+						<AcquisitionId>3</AcquisitionId>
+						<AcquisitionSpecs/>
+						<AcquisitionParameters>
+							<ImageMode id="Highres"/>
+							<CalibrationSet>DefaultCalibrationSetId</CalibrationSet>
+							<MV/>
+						</AcquisitionParameters>
+					</Acquisition>
+					<Mvd>
+						<Positions>
+							<Lat>0</Lat>
+							<Lng>0</Lng>
+							<Vrt>-80</Vrt>
+							<Pitch>0</Pitch>
+						</Positions>
+					</Mvd>
+				</ImagingPoint>
+				<ImagingPoint>
+					<Cp>4</Cp>
+					<Acquisition>
+						<AcquisitionId>4</AcquisitionId>
+						<AcquisitionSpecs/>
+						<AcquisitionParameters>
+							<ImageMode id="Highres"/>
+							<CalibrationSet>DefaultCalibrationSetId</CalibrationSet>
+							<MV/>
+						</AcquisitionParameters>
+					</Acquisition>
+					<Mvd>
+						<Positions>
+							<Lat>0</Lat>
+							<Lng>0</Lng>
+							<Vrt>-80</Vrt>
+							<Pitch>0</Pitch>
+						</Positions>
+					</Mvd>
+				</ImagingPoint>
+				<ImagingPoint>
+					<Cp>5</Cp>
+					<Acquisition>
+						<AcquisitionId>5</AcquisitionId>
+						<AcquisitionSpecs/>
+						<AcquisitionParameters>
+							<ImageMode id="Highres"/>
+							<CalibrationSet>DefaultCalibrationSetId</CalibrationSet>
+							<MV/>
+						</AcquisitionParameters>
+					</Acquisition>
+					<Mvd>
+						<Positions>
+							<Lat>0</Lat>
+							<Lng>0</Lng>
+							<Vrt>-80</Vrt>
+							<Pitch>0</Pitch>
+						</Positions>
+					</Mvd>
+				</ImagingPoint>
+				<ImagingPoint>
+					<Cp>6</Cp>
+					<Acquisition>
+						<AcquisitionId>6</AcquisitionId>
+						<AcquisitionSpecs/>
+						<AcquisitionParameters>
+							<ImageMode id="Highres"/>
+							<CalibrationSet>DefaultCalibrationSetId</CalibrationSet>
+							<MV/>
+						</AcquisitionParameters>
+					</Acquisition>
+					<Mvd>
+						<Positions>
+							<Lat>0</Lat>
+							<Lng>0</Lng>
+							<Vrt>-80</Vrt>
+							<Pitch>0</Pitch>
+						</Positions>
+					</Mvd>
+				</ImagingPoint>
+				<ImagingPoint>
+					<Cp>7</Cp>
+					<Acquisition>
+						<AcquisitionId>7</AcquisitionId>
+						<AcquisitionSpecs/>
+						<AcquisitionParameters>
+							<ImageMode id="Highres"/>
+							<CalibrationSet>DefaultCalibrationSetId</CalibrationSet>
+							<MV/>
+						</AcquisitionParameters>
+					</Acquisition>
+					<Mvd>
+						<Positions>
+							<Lat>0</Lat>
+							<Lng>0</Lng>
+							<Vrt>-80</Vrt>
+							<Pitch>0</Pitch>
+						</Positions>
+					</Mvd>
+				</ImagingPoint>
+				<ImagingPoint>
+					<Cp>8</Cp>
+					<Acquisition>
+						<AcquisitionId>8</AcquisitionId>
+						<AcquisitionSpecs/>
+						<AcquisitionParameters>
+							<ImageMode id="Highres"/>
+							<CalibrationSet>DefaultCalibrationSetId</CalibrationSet>
+							<MV/>
+						</AcquisitionParameters>
+					</Acquisition>
+					<Mvd>
+						<Positions>
+							<Lat>0</Lat>
+							<Lng>0</Lng>
+							<Vrt>-80</Vrt>
+							<Pitch>0</Pitch>
+						</Positions>
+					</Mvd>
+				</ImagingPoint>
+				<ImagingPoint>
+					<Cp>9</Cp>
+					<Acquisition>
+						<AcquisitionId>9</AcquisitionId>
+						<AcquisitionSpecs/>
+						<AcquisitionParameters>
+							<ImageMode id="Highres"/>
+							<CalibrationSet>DefaultCalibrationSetId</CalibrationSet>
+							<MV/>
+						</AcquisitionParameters>
+					</Acquisition>
+					<Mvd>
+						<Positions>
+							<Lat>0</Lat>
+							<Lng>0</Lng>
+							<Vrt>-80</Vrt>
+							<Pitch>0</Pitch>
+						</Positions>
+					</Mvd>
+				</ImagingPoint>
+				<ImagingPoint>
+					<Cp>10</Cp>
+					<Acquisition>
+						<AcquisitionId>10</AcquisitionId>
+						<AcquisitionSpecs/>
+						<AcquisitionParameters>
+							<ImageMode id="Highres"/>
+							<CalibrationSet>DefaultCalibrationSetId</CalibrationSet>
+							<MV/>
+						</AcquisitionParameters>
+					</Acquisition>
+					<Mvd>
+						<Positions>
+							<Lat>0</Lat>
+							<Lng>0</Lng>
+							<Vrt>-80</Vrt>
+							<Pitch>0</Pitch>
+						</Positions>
+					</Mvd>
+				</ImagingPoint>
+				<ImagingPoint>
+					<Cp>11</Cp>
+					<Acquisition>
+						<AcquisitionId>11</AcquisitionId>
+						<AcquisitionSpecs/>
+						<AcquisitionParameters>
+							<ImageMode id="Highres"/>
+							<CalibrationSet>DefaultCalibrationSetId</CalibrationSet>
+							<MV/>
+						</AcquisitionParameters>
+					</Acquisition>
+					<Mvd>
+						<Positions>
+							<Lat>0</Lat>
+							<Lng>0</Lng>
+							<Vrt>-80</Vrt>
+							<Pitch>0</Pitch>
+						</Positions>
+					</Mvd>
+				</ImagingPoint>						
+			</ImagingPoints>
+			<ImagingTolerances />	<!--mandatory, even if empty-->
+		</ImagingParameters>
+	</SetBeam>
+</VarianResearchBeam>
